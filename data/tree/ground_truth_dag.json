@@ -1,0 +1,189 @@
+{
+  "description": "Tree: balanced binary tree (7 edges, depth 3)",
+  "variables": {
+    "X0": {
+      "name": "X0"
+    },
+    "X1": {
+      "name": "X1"
+    },
+    "X2": {
+      "name": "X2"
+    },
+    "X3": {
+      "name": "X3"
+    },
+    "X4": {
+      "name": "X4"
+    },
+    "X5": {
+      "name": "X5"
+    },
+    "X6": {
+      "name": "X6"
+    },
+    "X7": {
+      "name": "X7"
+    }
+  },
+  "topological_order": [
+    "X0",
+    "X1",
+    "X2",
+    "X3",
+    "X4",
+    "X5",
+    "X6",
+    "X7"
+  ],
+  "edges": [
+    {
+      "source": "X0",
+      "target": "X1",
+      "weight": 0.7,
+      "sign": "excitatory"
+    },
+    {
+      "source": "X0",
+      "target": "X2",
+      "weight": 0.65,
+      "sign": "excitatory"
+    },
+    {
+      "source": "X1",
+      "target": "X3",
+      "weight": 0.6,
+      "sign": "excitatory"
+    },
+    {
+      "source": "X1",
+      "target": "X4",
+      "weight": -0.5,
+      "sign": "inhibitory"
+    },
+    {
+      "source": "X2",
+      "target": "X5",
+      "weight": 0.55,
+      "sign": "excitatory"
+    },
+    {
+      "source": "X2",
+      "target": "X6",
+      "weight": 0.6,
+      "sign": "excitatory"
+    },
+    {
+      "source": "X3",
+      "target": "X7",
+      "weight": 0.5,
+      "sign": "excitatory"
+    }
+  ],
+  "adjacency_matrix": {
+    "order": [
+      "X0",
+      "X1",
+      "X2",
+      "X3",
+      "X4",
+      "X5",
+      "X6",
+      "X7"
+    ],
+    "matrix": [
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "scm_parameters": {
+    "noise_variance": 0.3,
+    "weights": {
+      "w_X0X1": 0.7,
+      "w_X0X2": 0.65,
+      "w_X1X3": 0.6,
+      "w_X1X4": -0.5,
+      "w_X2X5": 0.55,
+      "w_X2X6": 0.6,
+      "w_X3X7": 0.5
+    }
+  }
+}
