@@ -85,7 +85,8 @@ COLLIDER = _build(
      ("X4", "X3", 0.45), ("X5", "X3", -0.40),
      ("X3", "X6", 0.70), ("X6", "X7", 0.55),
      ("X0", "X1", 0.35)],  # weak edge between two parents for extra complexity
-    "Collider: {X0,X1,X2,X4,X5}→X3→X6→X7 (8 edges, v-structure at X3)"
+    "Collider: {X0,X1,X2,X4,X5}→X3→X6→X7 (8 edges, v-structure at X3)",
+    topo_order=["X0", "X4", "X5", "X1", "X2", "X3", "X6", "X7"],
 )
 
 # =============================================================================
